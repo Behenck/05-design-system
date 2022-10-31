@@ -3,9 +3,7 @@ import * as _stitches_react_types_css_util from '@stitches/react/types/css-util'
 import * as _stitches_react_types_config from '@stitches/react/types/config';
 import { ComponentProps } from 'react';
 
-declare const Button: _stitches_react_types_styled_component.StyledComponent<"button", {
-    size?: "big" | "small" | undefined;
-}, {}, _stitches_react_types_css_util.CSS<{}, {
+declare const Box: _stitches_react_types_styled_component.StyledComponent<"div", {}, {}, _stitches_react_types_css_util.CSS<{}, {
     colors: {
         white: string;
         black: string;
@@ -78,6 +76,7 @@ declare const Button: _stitches_react_types_styled_component.StyledComponent<"bu
         80: string;
     };
 }, _stitches_react_types_config.DefaultThemeMap, {}>>;
-declare type ButtonProps = ComponentProps<typeof Button>;
+interface BoxProps extends ComponentProps<typeof Box> {
+}
 
-export { Button, ButtonProps };
+export { Box, BoxProps };
